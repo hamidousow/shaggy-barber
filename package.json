@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/hamidousow/shaggy-barber/issues"
   },
-  "homepage": "https://github.com/hamidousow/shaggy-barber#readme"
+  "homepage": "https://github.com/hamidousow/shaggy-barber#readme",
+  "devDependencies": {
+    "eslint": "^8.25.0"
+  }
 }
