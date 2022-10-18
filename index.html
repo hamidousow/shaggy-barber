@@ -10,7 +10,7 @@
 <body>
     <header>
         <nav class="nav">
-            <img src="images/shaggy-barber-logo.png" class="nav__logo" alt="shaggy barber logo">
+            <img src="images/shaggy-barber-icone.svg" class="nav__logo" id="nav-logo" alt="shaggy barber logo">
             <div class="nav__button" id="nav-button">
                 <img src="./images/button.png" alt="button open menu">
             </div>
@@ -30,19 +30,36 @@
                     </li>                    
                 </ul>
             </div>
-        </nav>
-        <section class="hero">
-            <div class="left">
-                <h1 class="hero__title">shaggy barber blabla bla</h1>
-                <p class="hero__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illo fugit nisi eius repellat earum.
-                </p>
-            </div>
-            <div class="right">
-                <img src="" alt="" srcset="">
-            </div>
-        </section>
+        </nav>        
     </header>
+    <section class="hero">
+        <h1 class="hero__title">shaggy barber</h1>
+        <p class="hero__text">
+            since 2014
+        </p>
+        <a href="#" class="hero__cta">
+            <p class="hero__cta__text">discover</p>
+            <svg class="hero__cta__decoration" viewBox="0 0 100 100" width="120" height="120">
+                <defs>
+                    <path id="circle"
+                    d="
+                        M 50, 50
+                        m -37, 0
+                        a 37,37 0 1,1 74,0
+                        a 37,37 0 1,1 -74,0"/>
+                </defs>
+                <text font-size="15" font-weight="200" class="hero__cta__text-circle">
+                    <textPath xlink:href="#circle"> scroll - scroll - scroll - scroll - scroll -</textPath>
+                </text>
+            </svg>
+        </a>
+        <div class="hero__background-image">
+            <img alt="" src="./images/hero-img.jpg"/>
+        </div>
+    </section>
+    <section class="about" style="height:100vh">
+
+    </section>
     <script src="./js/index.js"></script>
 </body>
 </html>

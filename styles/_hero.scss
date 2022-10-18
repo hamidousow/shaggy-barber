@@ -1,18 +1,78 @@
-.hero {
-    background-color: $clr-dark;
-    height: 70vh;
-    padding: 220px 50px 0;
+.hero {    
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 50px 35px 0;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(19,19,19,1) 0%, rgba(19,19,19,0.010241596638655426) 100%);  
 
     &__title {
         color: $clr-white;
+        font-family: 'Lemon milk';
         font-size: 1.65rem;
         font-weight: 700;
         text-transform: uppercase;
-        margin-bottom: .9rem;
+    }
+    
+    &__text {
+        font-size: .8rem;
+        text-transform: uppercase;
+        color: $clr-white;
+        // margin-bottom: 3.5rem;
+    }
+    
+    &__cta {
+        position: absolute;
+        bottom: 100px;
+        width: 233px;
+        text-decoration: none;
+
+        &__text {
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: $clr-white;
+        }
+
+        &__decoration {
+            position: absolute;
+            top: -285%;
+            left: 25%;
+            animation: spin 20s infinite linear;
+        }
+
+        &__text-circle {
+            fill: $clr-white;
+            height: auto;
+            max-width: 66vmin;
+            transform-origin: center;
+            width: 100%;
+        }
     }
 
-    &__text {
-        font-size: 1.25rem;
-        color: $clr-grey-light;
+    &__background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;        
+        z-index: -1;
+        overflow: hidden;
+
+        & img {
+            height: 100%;
+        }
+    }   
+
+    @keyframes spin {
+        from {
+            transform:rotate(0deg);
+        }
+        to {
+            transform:rotate(360deg);
+        }
     }
 }
