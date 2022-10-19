@@ -17,11 +17,10 @@
 
     &__logo {
         position: absolute;
-        height: 40px;
-        z-index: -1;
+        height: 30px;
         transition: .5s;
         top: 0;
-        transform: translateY(25%);
+        transform: translateY(50%);
         left: 35px;
         animation: resizeLogo .5s ease;
 
@@ -31,8 +30,9 @@
     }
 
     &__logo__resize {
-        height: 30px;
-        transform: translateY(25%) scale3d(1, 1, 1);              
+        height: 25px;
+        transform: translateY(50%);  
+        // transform-origin: top left;            
     }
 
     &__menu {

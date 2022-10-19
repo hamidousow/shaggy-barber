@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    row-gap: .5rem;;
     background: linear-gradient(0deg, rgba(19,19,19,1) 0%, rgba(19,19,19,0.010241596638655426) 100%);  
 
     &__title {
@@ -20,7 +21,7 @@
         font-size: .8rem;
         text-transform: uppercase;
         color: $clr-white;
-        // margin-bottom: 3.5rem;
+        margin-bottom: 3.5rem;
     }
     
     &__cta {
