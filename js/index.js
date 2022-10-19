@@ -9,15 +9,8 @@ function openMenu() {
 
 const logo = document.getElementById("nav-logo");
 
-document.addEventListener('scroll', (e) => {    
-
-    if(window.scrollY > 50) {        
-        logo.classList.add('nav__logo__resize')
-    }
-    
-    if(window.scrollY < 50) {
-        logo.classList.remove('nav__logo__resize')
-    }
+document.addEventListener('scroll', (e) => {
+    window.scrollY > 50 ? logo.classList.add('nav__logo__resize') : logo.classList.remove('nav__logo__resize')
 })
 
 

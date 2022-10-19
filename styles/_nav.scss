@@ -6,9 +6,9 @@
     width: 100vw;
     box-sizing: border-box;
     display: flex; 
-    flex-direction: row-reverse;   
+    flex-direction: row;   
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     z-index: 10;
 
     &__button {
@@ -16,20 +16,23 @@
     }
 
     &__logo {
-        height: 120px;
         position: absolute;
-        top: 400%;
-        left: 50%;
-        transform: translateX(-50%);
+        height: 40px;
         z-index: -1;
         transition: .5s;
+        top: 0;
+        transform: translateY(25%);
+        left: 35px;
+        animation: resizeLogo .5s ease;
+
+        img {
+            height: 100%;
+        }
     }
 
     &__logo__resize {
         height: 30px;
-        top: 0;
-        left: 35px;
-        transform: translateY(50%);
+        transform: translateY(25%) scale3d(1, 1, 1);              
     }
 
     &__menu {

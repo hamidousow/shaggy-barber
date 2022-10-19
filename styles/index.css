@@ -69,15 +69,15 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   z-index: 10;
 }
 
@@ -86,23 +86,27 @@ body {
 }
 
 .nav__logo {
-  height: 120px;
   position: absolute;
-  top: 400%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  height: 40px;
   z-index: -1;
   -webkit-transition: .5s;
   transition: .5s;
+  top: 0;
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
+  left: 35px;
+  -webkit-animation: resizeLogo .5s ease;
+          animation: resizeLogo .5s ease;
+}
+
+.nav__logo img {
+  height: 100%;
 }
 
 .nav__logo__resize {
   height: 30px;
-  top: 0;
-  left: 35px;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  -webkit-transform: translateY(25%) scale3d(1, 1, 1);
+          transform: translateY(25%) scale3d(1, 1, 1);
 }
 
 .nav__menu {
@@ -232,8 +236,8 @@ body {
   position: absolute;
   top: -285%;
   left: 25%;
-  -webkit-animation: spin 20s infinite linear;
-          animation: spin 20s infinite linear;
+  -webkit-animation: spin 50s infinite linear;
+          animation: spin 50s infinite linear;
 }
 
 .hero__cta__text-circle {
@@ -279,5 +283,19 @@ body {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+}
+
+.about__title {
+  color: #ffffff;
+  font-family: 'Lemon milk';
+  font-size: 1.65rem;
+  font-weight: 700;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+.about__text {
+  color: #ffffff;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=index.css.map */

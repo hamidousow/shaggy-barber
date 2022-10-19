@@ -1,0 +1,15 @@
+.about {
+    &__title {
+        color: $clr-white;
+        font-family: 'Lemon milk';
+        font-size: 1.65rem;
+        font-weight: 700;
+        line-height: 140%;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        color: $clr-white;
+        font-size: 1rem;
+    }
+}
