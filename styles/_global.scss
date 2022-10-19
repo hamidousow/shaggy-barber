@@ -4,7 +4,20 @@ $clr-white: #ffffff;
 $clr-grey-light: #C4C4C4;
 $clr-yellow: #DABC27;
 
+$header-big: 1.65rem;
+$paragraph-m: 1.2rem;
+
+$bold: 700;
+
+
 body {
     font-family: 'Roboto';
     background-color: $clr-dark;
 }
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+
+

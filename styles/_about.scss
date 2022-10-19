@@ -5,7 +5,7 @@
     row-gap: 3rem;
     flex-direction: column-reverse;
     background-color: $clr-black;
-    clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0%, 100% 95%, 50% 100%, 0 95%);
 
     &__left {
 
@@ -33,10 +33,9 @@
         &__title {
             color: $clr-white;
             font-family: 'Lemon milk';
-            font-size: 1.65rem;
-            font-weight: 700;
+            font-size: $header-big;
+            font-weight: $bold;
             line-height: 120%;
-            text-transform: uppercase;
             margin-bottom: 3rem;
             position: relative;
 
@@ -54,7 +53,7 @@
     
         &__text {
             color: $clr-grey-light;
-            font-size: 1rem;
+            font-size: $paragraph-m;
             line-height: 120%;
         }
     }
