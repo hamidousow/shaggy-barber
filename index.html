@@ -51,7 +51,7 @@
                         a 37,37 0 1,1 -74,0"/>
                 </defs>
                 <text font-size="15" font-weight="200" class="hero__cta__text-circle">
-                    <textPath xlink:href="#circle"> scroll - scroll - scroll - scroll - scroll -</textPath>
+                    <textPath xlink:href="#circle"> scroll • scroll • scroll • scroll • scroll •</textPath>
                 </text>
             </svg>
         </a>
@@ -74,15 +74,15 @@
         </div>
         <div class="about__right">
             <h2 class="about__right__title uppercase">le coiffeur préféré de ton coiffeur préféré</h2>
-            <p class="about__right__text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis possimus soluta molestias, ratione necessitatibus accusantium eius quos praesentium deleniti. Perferendis odit nisi aperiam in ullam? Perspiciatis, officiis? Similique, doloribus quia.</p>
+            <p class="about__right__text text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis possimus soluta molestias, ratione necessitatibus accusantium eius quos praesentium deleniti. Perferendis odit nisi aperiam in ullam? Perspiciatis, officiis? Similique, doloribus quia.</p>
             <br>
-            <p class="about__right__text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis possimus soluta molestias, ratione necessitatibus accusantium eius quos praesentium deleniti.</p>
+            <p class="about__right__text text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis possimus soluta molestias, ratione necessitatibus accusantium eius quos praesentium deleniti.</p>
         </div> 
     </section>
     <section class="services" id="services">
         <div class="services__left">
             <h2 class="services__left__title uppercase">nos services</h2>
-            <p class="services__left__text"> Des services de qualité, pour des clients de qualité !</p>
+            <p class="services__left__text text"> Des services de qualité, pour des clients de qualité !</p>
         </div>
         <div class="services__right">
             <div class="card" id="card-service-1">
@@ -116,12 +116,51 @@
     </section>
     <section id="gallery">
         <div class="gallery">
-            <img src="./images/picture-1.jpg" alt="">
-            <img src="./images/picture-2.jpg" alt="">
-            <img src="./images/picture-3.jpg" alt="">
-            <img src="./images/picture-4.jpg" alt="">
-            <img src="./images/picture-5.jpg" alt="">
-            <img src="./images/picture-6.jpg" alt="">
+            <ul class="gallery__slide gallery-items" id="gallery-slide">
+            
+            </ul>            
+        </div>
+    </section>
+    <section class="tarifs" id="tarifs">
+        <h2 class="tarifs__title uppercase">tarifs</h2>
+        <svg class="spinning-circle" viewBox="0 0 100 100" width="120" height="120">
+            <defs>
+                <path id="circle"
+                d="
+                    M 50, 50
+                    m -37, 0
+                    a 37,37 0 1,1 74,0
+                    a 37,37 0 1,1 -74,0"/>
+            </defs>
+            <text font-size="16" font-weight="200" class="spinning-circle__text">
+                <textPath xlink:href="#circle"> shaggy barber • shaggy barber • </textPath>
+            </text>
+        </svg>
+        <p class="tarifs__text text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa iste illo voluptatibus quibusdam blanditiis laboriosam recusandae hic tempore amet.</p>
+        <ul class="tarifs__list" id="tarifs-list">
+            
+        </ul>
+    </section>
+    <section class="comments">
+        <h2 class="comments__title title uppercase">Ils ont été satisfaits</h2>
+        <p class="comments__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus totam optio sapiente quasi expedita eveniet eum repellendus amet assumenda.</p>
+        <div class="comments__slider">
+            <div class="slider__item">
+                <p class="slider__item__text" id="user-comment"></p>
+                <div class="slider__item__user">
+                    <div class="slider__item__user__name" id="user-id"><i>&#128100;</i></div>
+                </div>
+                <div class="slider__nav">
+                    <div class="slider__nav__btn-next" id="slide-prev">
+                        <img src="./images/arrow-prev.svg" class="icon-prev" alt="previous comment">
+                    </div>
+                    <div class="slider__nav__btn-prev"  id="slide-next">
+                        <img src="./images/arrow-next.svg" class="icon-next" alt="next comment">
+                    </div>                    
+                </div>
+                
+            </div>
+            
         </div>
     </section>
     <script src="./js/index.js"></script>

@@ -1,0 +1,12 @@
+.spinning-circle {
+
+    position: absolute;
+    animation: spin 50s infinite linear;
+    left: 50%;
+    transform: translateX(50%);
+
+    &__text {
+        fill: $clr-grey-light;
+    }
+}
+

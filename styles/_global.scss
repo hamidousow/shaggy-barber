@@ -5,7 +5,7 @@ $clr-grey-light: #C4C4C4;
 $clr-yellow: #DABC27;
 
 $header-big: 1.65rem;
-$paragraph-m: 1.2rem;
+$paragraph-m: 1.1rem;
 
 $bold: 700;
 
@@ -13,6 +13,30 @@ $bold: 700;
 body {
     font-family: 'Roboto';
     background-color: $clr-dark;
+}
+
+.title {
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 3rem;
+    position: relative;
+
+    &::after { 
+        content: "";
+        display: inline-block;
+        width: 105px;
+        height: 3px;
+        background-color: #DABC27;
+        position: absolute;
+        left: 0;
+        bottom: -7px;
+    }
+}
+
+.text {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
 }
 
 .uppercase {
