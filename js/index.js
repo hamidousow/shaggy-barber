@@ -1,10 +1,19 @@
 const navButton = document.getElementById('nav-button');
 const navMenu = document.querySelector('#nav__menu');
+const navLink = document.querySelectorAll('.nav__menu__link')
 
 navButton.addEventListener("click", openMenu);
 
+for(let i = 0; i < navLink.length; i++) {
+    navLink[i].addEventListener('click', closeMenu)
+}
+
 function openMenu() {
     navMenu.classList.toggle('nav__menu__active');
+}
+
+function closeMenu() {
+    navMenu.classList.remove('nav__menu__active');
 }
 
 const logo = document.getElementById("nav-logo");
