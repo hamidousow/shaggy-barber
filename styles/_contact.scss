@@ -1,0 +1,39 @@
+.contact {
+    padding: 150px 35px;
+    background-color: $clr-black;
+
+    &__title {
+        text-align: center;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        color: $clr-white;
+        font-size: 1.3rem;
+        line-height: 140%;
+    }
+
+    &__cta {
+        width: fit-content;
+        text-decoration: unset;
+        color: $clr-black;
+        font-size: .9rem;
+        text-transform: uppercase;        
+        display: block;
+        margin: 50px auto;
+        text-align: center; 
+        padding: 1rem 2rem;;
+        background-color: $clr-yellow;
+        border-radius: 25px;
+    }
+
+    &__map {
+        border-radius: 5px;
+        overflow: hidden;
+        max-width: 900px;
+    }
+}

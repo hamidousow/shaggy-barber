@@ -34,14 +34,97 @@
             </div>
         </nav>        
     </header>
-    <section class="hero">
-        <h1 class="hero__title">shaggy barber</h1>
-        <p class="hero__text">
-            since 2014
-        </p>
-        <a href="#about" class="hero__cta">
-            <p class="hero__cta__text">discover</p>
-            <svg class="hero__cta__decoration" viewBox="0 0 100 100" width="120" height="120">
+    <main>
+        <section class="hero">
+            <h1 class="hero__title">shaggy barber</h1>
+            <p class="hero__text">
+                since 2014
+            </p>
+            <a href="#about" class="hero__cta">
+                <p class="hero__cta__text">discover</p>
+                <svg class="hero__cta__decoration" viewBox="0 0 100 100" width="120" height="120">
+                    <defs>
+                        <path id="circle"
+                        d="
+                            M 50, 50
+                            m -37, 0
+                            a 37,37 0 1,1 74,0
+                            a 37,37 0 1,1 -74,0"/>
+                    </defs>
+                    <text font-size="15" font-weight="200" class="hero__cta__text-circle">
+                        <textPath xlink:href="#circle"> scroll • scroll • scroll • scroll • scroll •</textPath>
+                    </text>
+                </svg>
+            </a>
+            <div class="hero__background-image">
+                <img alt="" src="./images/hero-img.jpg"/>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="about__left">
+                <img src="./images/about-barber.jpg" class="about__left__img" alt="barber barbing mouahahahah">
+                <div class="about__left__social-item">
+                    <a href="http://">
+                        <img src="./images/instagram.svg" alt="follow me on instagram">
+                    </a>
+                
+                    <a href="http://">
+                        <img src="./images/snapchat.svg" alt="follow me on snapchat">
+                    </a>
+                </div>
+            </div>
+            <div class="about__right">
+                <h2 class="about__right__title uppercase">le coiffeur préféré de ton coiffeur préféré</h2>
+                <p class="about__right__text text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis possimus soluta molestias, ratione necessitatibus accusantium eius quos praesentium deleniti. Perferendis odit nisi aperiam in ullam? Perspiciatis, officiis? Similique, doloribus quia.</p>
+                <br>
+                <p class="about__right__text text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis possimus soluta molestias, ratione necessitatibus accusantium eius quos praesentium deleniti.</p>
+            </div> 
+        </section>
+        <section class="services" id="services">
+            <div class="services__left">
+                <h2 class="services__left__title uppercase">nos services</h2>
+                <p class="services__left__text text"> Des services de qualité, pour des clients de qualité !</p>
+            </div>
+            <div class="services__right">
+                <div class="card" id="card-service-1">
+                    <div class="card__left card__background-img">
+                        <img src="./images/service-1.jpg" alt="">
+                    </div>
+                    <div class="card__right">
+                        <h3 class="card__right__title">Service 1</h3>
+                        <p class="card__right__text">Une coupe bien fraîche bien viking chacal !</p>
+                    </div>
+                </div>
+                <div class="card" id="card-service-2">
+                    <div class="card__left card__background-img">
+                        <img src="./images/service-2.jpg" alt="">
+                    </div>
+                    <div class="card__right">
+                        <h3 class="card__right__title">Service 1</h3>
+                        <p class="card__right__text">Une coupe bien fraîche bien viking chacal !</p>
+                    </div>
+                </div>
+                <div class="card" id="card-service-3">
+                    <div class="card__left card__background-img">
+                        <img src="./images/service-3.jpg" alt="">
+                    </div>
+                    <div class="card__right">
+                        <h3 class="card__right__title">Service 1</h3>
+                        <p class="card__right__text">Une coupe bien fraîche bien viking chacal !</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="gallery">
+            <div class="gallery">
+                <ul class="gallery__slide gallery-items" id="gallery-slide">
+                
+                </ul>            
+            </div>
+        </section>
+        <section class="tarifs" id="tarifs">
+            <h2 class="tarifs__title uppercase">tarifs</h2>
+            <svg class="spinning-circle" viewBox="0 0 100 100" width="120" height="120">
                 <defs>
                     <path id="circle"
                     d="
@@ -50,119 +133,76 @@
                         a 37,37 0 1,1 74,0
                         a 37,37 0 1,1 -74,0"/>
                 </defs>
-                <text font-size="15" font-weight="200" class="hero__cta__text-circle">
-                    <textPath xlink:href="#circle"> scroll • scroll • scroll • scroll • scroll •</textPath>
+                <text font-size="16" font-weight="200" class="spinning-circle__text">
+                    <textPath xlink:href="#circle"> shaggy barber • shaggy barber • </textPath>
                 </text>
             </svg>
-        </a>
-        <div class="hero__background-image">
-            <img alt="" src="./images/hero-img.jpg"/>
-        </div>
-    </section>
-    <section class="about" id="about">
-        <div class="about__left">
-            <img src="./images/about-barber.jpg" class="about__left__img" alt="barber barbing mouahahahah">
-            <div class="about__left__social-item">
-                <a href="http://">
-                    <img src="./images/instagram.svg" alt="follow me on instagram">
-                </a>
-            
-                <a href="http://">
-                    <img src="./images/snapchat.svg" alt="follow me on snapchat">
-                </a>
-            </div>
-        </div>
-        <div class="about__right">
-            <h2 class="about__right__title uppercase">le coiffeur préféré de ton coiffeur préféré</h2>
-            <p class="about__right__text text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis possimus soluta molestias, ratione necessitatibus accusantium eius quos praesentium deleniti. Perferendis odit nisi aperiam in ullam? Perspiciatis, officiis? Similique, doloribus quia.</p>
-            <br>
-            <p class="about__right__text text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis possimus soluta molestias, ratione necessitatibus accusantium eius quos praesentium deleniti.</p>
-        </div> 
-    </section>
-    <section class="services" id="services">
-        <div class="services__left">
-            <h2 class="services__left__title uppercase">nos services</h2>
-            <p class="services__left__text text"> Des services de qualité, pour des clients de qualité !</p>
-        </div>
-        <div class="services__right">
-            <div class="card" id="card-service-1">
-                <div class="card__left card__background-img">
-                    <img src="./images/service-1.jpg" alt="">
-                </div>
-                <div class="card__right">
-                    <h3 class="card__right__title">Service 1</h3>
-                    <p class="card__right__text">Une coupe bien fraîche bien viking chacal !</p>
-                </div>
-            </div>
-            <div class="card" id="card-service-2">
-                <div class="card__left card__background-img">
-                    <img src="./images/service-2.jpg" alt="">
-                </div>
-                <div class="card__right">
-                    <h3 class="card__right__title">Service 1</h3>
-                    <p class="card__right__text">Une coupe bien fraîche bien viking chacal !</p>
-                </div>
-            </div>
-            <div class="card" id="card-service-3">
-                <div class="card__left card__background-img">
-                    <img src="./images/service-3.jpg" alt="">
-                </div>
-                <div class="card__right">
-                    <h3 class="card__right__title">Service 1</h3>
-                    <p class="card__right__text">Une coupe bien fraîche bien viking chacal !</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="gallery">
-        <div class="gallery">
-            <ul class="gallery__slide gallery-items" id="gallery-slide">
-            
-            </ul>            
-        </div>
-    </section>
-    <section class="tarifs" id="tarifs">
-        <h2 class="tarifs__title uppercase">tarifs</h2>
-        <svg class="spinning-circle" viewBox="0 0 100 100" width="120" height="120">
-            <defs>
-                <path id="circle"
-                d="
-                    M 50, 50
-                    m -37, 0
-                    a 37,37 0 1,1 74,0
-                    a 37,37 0 1,1 -74,0"/>
-            </defs>
-            <text font-size="16" font-weight="200" class="spinning-circle__text">
-                <textPath xlink:href="#circle"> shaggy barber • shaggy barber • </textPath>
-            </text>
-        </svg>
-        <p class="tarifs__text text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa iste illo voluptatibus quibusdam blanditiis laboriosam recusandae hic tempore amet.</p>
-        <ul class="tarifs__list" id="tarifs-list">
-            
-        </ul>
-    </section>
-    <section class="comments">
-        <h2 class="comments__title title uppercase">Ils ont été satisfaits</h2>
-        <p class="comments__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus totam optio sapiente quasi expedita eveniet eum repellendus amet assumenda.</p>
-        <div class="comments__slider">
-            <div class="slider__item">
-                <p class="slider__item__text" id="user-comment"></p>
-                <div class="slider__item__user">
-                    <div class="slider__item__user__name" id="user-id"><i>&#128100;</i></div>
-                </div>
-                <div class="slider__nav">
-                    <div class="slider__nav__btn-next" id="slide-prev">
-                        <img src="./images/arrow-prev.svg" class="icon-prev" alt="previous comment">
-                    </div>
-                    <div class="slider__nav__btn-prev"  id="slide-next">
-                        <img src="./images/arrow-next.svg" class="icon-next" alt="next comment">
-                    </div>                    
-                </div>
+            <p class="tarifs__text text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa iste illo voluptatibus quibusdam blanditiis laboriosam recusandae hic tempore amet.</p>
+            <ul class="tarifs__list" id="tarifs-list">
                 
+            </ul>
+        </section>
+        <section class="comments" id="comments">
+            <h2 class="comments__title title uppercase">Ils ont été satisfaits</h2>
+            <p class="comments__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus totam optio sapiente quasi expedita eveniet eum repellendus amet assumenda.</p>
+            <div class="comments__slider">
+                <div class="slider__item">
+                    <p class="slider__item__text" id="user-comment"></p>
+                    <div class="slider__item__user">
+                        <div class="slider__item__user__name" id="user-id"><i>&#128100;</i></div>
+                    </div>
+                    <div class="slider__nav">
+                        <div class="slider__nav__btn-next" id="slide-prev">
+                            <img src="./images/arrow-prev.svg" class="icon-prev" alt="previous comment">
+                        </div>
+                        <div class="slider__nav__btn-prev"  id="slide-next">
+                            <img src="./images/arrow-next.svg" class="icon-next" alt="next comment">
+                        </div>                    
+                    </div>                
+                </div>            
             </div>
-            
+            <img class="zigzag-separator" src="./images/zigzag.svg" alt="separator zigzag">
+        </section>
+        <section class="contact" id="contact">
+            <h2 class="contact__title title uppercase">où nous trouver ?</h2>
+            <div class="contact__information">
+                <p class="contact__text text">Shaggy Barber</p>
+                <p class="contact__text text"> 3 rue Charlemagne</p>
+                <p class="contact__text text">59200 - Tourcoing</p>
+            </div>    
+            <a href="/" class="contact__cta"> réserve ta séance </a>
+            <div class="contact__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40415.009161039015!2d3.122676229136732!3d50.72108804506251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c328d4be0a275d%3A0x252e317d7dad858f!2s59200%20Tourcoing!5e0!3m2!1sfr!2sfr!4v1666657209479!5m2!1sfr!2sfr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__logo">
+            <img src="./images/shaggy-barber-logo.svg" alt="shaggy barber logo">
         </div>
-    </section>
+        <section class="footer__informations footer__section">
+            <h3 class="footer__title">informations</h3>
+            <a href="#about" class="footer__link">à propos</a>
+            <a href="#services" class="footer__link">nos services</a>
+            <a href="#tarifs" class="footer__link">nos tarifs</a>
+            <a href="#contact" class="footer__link">où nous trouver</a>
+        </section>
+        <section class="footer__social footer__section">
+            <h3 class="footer__title">Suis-nous sur les réseaux...</h3>
+            <div class="wrap-icons">
+                <a href="/" class="footer__social-icon">
+                    <img src="./images/instagram.svg" alt="follow us on instagram">
+                </a>
+                <a href="/" class="footer__social-icon">
+                    <img src="./images/snapchat.svg" alt="follow us on instagram">
+                </a> 
+            </div>
+        </section>
+        <section class="footer__rgpd footer__section">
+            <a href="/" class="footer__link">mentions légales •</a>
+            <a href="/" class="footer__link">Politique de confidentialité</a>
+        </section>
+    </footer>
     <script src="./js/index.js"></script>
 </body>
 </html>

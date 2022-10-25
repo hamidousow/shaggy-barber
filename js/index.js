@@ -74,13 +74,13 @@ btnNext.addEventListener('click', nextComment)
 btnPrev.addEventListener('click', prevComment)
 
 userNickname.innerText = `${commentList[count].nickname}`
-userComment.innerText = `${commentList[count].comment}`
+userComment.innerText = `" ${commentList[count].comment} "`
 
 function prevComment() {
     if(count > 0) {
         count--
         userNickname.innerText = `${commentList[count].nickname}`
-        userComment.innerText = `${commentList[count].comment}`
+        userComment.innerText = `" ${commentList[count].comment} "`
     } 
     console.log(count)   
 }
@@ -89,7 +89,7 @@ function nextComment() {
     if(count < commentList.length-1) {
         count++
         userNickname.innerText = `${commentList[count].nickname}`
-        userComment.innerText = `${commentList[count].comment}`
+        userComment.innerText = `" ${commentList[count].comment} "`
     }
     console.log(count)  
 }
