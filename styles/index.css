@@ -111,9 +111,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   z-index: 10;
 }
 
@@ -122,16 +122,7 @@ body {
 }
 
 .nav__logo {
-  position: absolute;
   height: 30px;
-  -webkit-transition: .5s;
-  transition: .5s;
-  top: 0;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  left: 35px;
-  -webkit-animation: resizeLogo .5s ease;
-          animation: resizeLogo .5s ease;
 }
 
 .nav__logo img {
@@ -213,6 +204,12 @@ body {
   }
   100% {
     height: 100vh;
+  }
+}
+
+@media screen and (min-width: 568px) and (max-width: 768px) {
+  .nav {
+    padding: 14px 70px;
   }
 }
 

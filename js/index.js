@@ -16,11 +16,11 @@ function closeMenu() {
     navMenu.classList.remove('nav__menu__active');
 }
 
-const logo = document.getElementById("nav-logo");
+// const logo = document.getElementById("nav-logo");
 
-document.addEventListener('scroll', (e) => {
-    window.scrollY > 50 ? logo.classList.add('nav__logo__resize') : logo.classList.remove('nav__logo__resize')
-})
+// document.addEventListener('scroll', (e) => {
+//     window.scrollY > 50 ? logo.classList.add('nav__logo__resize') : logo.classList.remove('nav__logo__resize')
+// })
 
 /** slide */
 
