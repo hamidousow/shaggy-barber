@@ -11,7 +11,6 @@ $paragraph-m: 1.1rem;
 
 $bold: 700;
 
-
 body {
     font-family: 'Roboto';
     background-color: $clr-dark;
@@ -48,6 +47,9 @@ body {
 .zigzag-separator {
     position: relative;
     margin-top: 150px;
+    @media screen and (min-width: 568px) {
+        margin-top: 200px;
+    }
     transform: translateX(-50%);
     left: 50%;
 }

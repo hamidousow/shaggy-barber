@@ -93,6 +93,12 @@ body {
   left: 50%;
 }
 
+@media screen and (min-width: 568px) {
+  .zigzag-separator {
+    margin-top: 200px;
+  }
+}
+
 .nav {
   position: fixed;
   left: 0;
@@ -532,15 +538,16 @@ body {
   height: 25vh;
   border-radius: 5px;
   width: 100%;
-  background: grey;
   margin: 0 10px 0 0;
   -ms-touch-action: pan-y;
       touch-action: pan-y;
+  -webkit-box-shadow: 0px 3px 12px #00000050;
+          box-shadow: 0px 3px 12px #00000050;
 }
 
 @media screen and (min-width: 568px) and (max-width: 768px) {
   .gallery {
-    padding: 200px 70px;
+    padding: 0 70px;
   }
 }
 
@@ -601,7 +608,7 @@ body {
 
 @media screen and (min-width: 568px) and (max-width: 768px) {
   .tarifs {
-    padding: 0 70px;
+    padding: 200px 70px;
   }
 }
 
