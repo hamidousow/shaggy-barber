@@ -61,3 +61,9 @@
         color: $clr-white;
     }
 }
+
+@media screen and (min-width: 568px) and (max-width: 768px) {
+    .page-footer {        
+        padding: 200px 70px;
+    }
+}

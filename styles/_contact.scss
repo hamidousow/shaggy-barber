@@ -35,5 +35,22 @@
         border-radius: 5px;
         overflow: hidden;
         max-width: 900px;
+
+        iframe {
+            height: 40vh;
+            max-height: 300px;
+        }        
+    }
+}
+
+@media screen and (min-width: 568px) and (max-width: 768px) {
+    .contact {
+        padding: 0 70px;
+        &__map { 
+            iframe {
+                height: 40vh;
+                max-height: 500px;
+            }
+        }
     }
 }

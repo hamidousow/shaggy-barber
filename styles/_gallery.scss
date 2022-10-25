@@ -1,5 +1,5 @@
 .gallery {
-    padding: 0 35px 150px;  
+    padding: 0 35px;  
     overflow: hidden;  
 
     &__slide {  
@@ -19,5 +19,11 @@
         background: grey;
         margin: 0 10px 0 0;
         touch-action: pan-y;
+    }
+}
+
+@media screen and (min-width: 568px) and (max-width: 768px) {
+    .gallery {
+        padding: 200px 70px;
     }
 }

@@ -42,3 +42,9 @@
         color: $clr-grey-light;
     }    
 }
+
+@media screen and (min-width: 568px) and (max-width: 768px) {
+    .tarifs {        
+        padding: 0 70px;
+    }
+}

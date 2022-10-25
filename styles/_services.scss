@@ -37,8 +37,12 @@
 }
 
 @media screen and (min-width: 568px) and (max-width: 768px) {
-    .services__right {
+    .services {        
+        padding: 200px 70px;
+
+        &__right {
         flex-direction: row;
         column-gap: 10px;
+        }
     }
 }

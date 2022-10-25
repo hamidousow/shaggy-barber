@@ -129,12 +129,6 @@ body {
   height: 100%;
 }
 
-.nav__logo__resize {
-  height: 25px;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-}
-
 .nav__menu {
   display: none;
   position: absolute;
@@ -211,19 +205,9 @@ body {
   .nav {
     padding: 14px 70px;
   }
-}
-
-.spinning-circle {
-  position: absolute;
-  -webkit-animation: spin 50s infinite linear;
-          animation: spin 50s infinite linear;
-  left: 50%;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
-}
-
-.spinning-circle__text {
-  fill: #C4C4C4;
+  .nav__button img {
+    margin-right: 17px;
+  }
 }
 
 .hero {
@@ -453,6 +437,9 @@ body {
 }
 
 @media screen and (min-width: 568px) and (max-width: 768px) {
+  .services {
+    padding: 200px 70px;
+  }
   .services__right {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -529,7 +516,7 @@ body {
 }
 
 .gallery {
-  padding: 0 35px 150px;
+  padding: 0 35px;
   overflow: hidden;
 }
 
@@ -549,6 +536,12 @@ body {
   margin: 0 10px 0 0;
   -ms-touch-action: pan-y;
       touch-action: pan-y;
+}
+
+@media screen and (min-width: 568px) and (max-width: 768px) {
+  .gallery {
+    padding: 200px 70px;
+  }
 }
 
 .tarifs {
@@ -604,6 +597,12 @@ body {
 
 .list__item-text {
   color: #C4C4C4;
+}
+
+@media screen and (min-width: 568px) and (max-width: 768px) {
+  .tarifs {
+    padding: 0 70px;
+  }
 }
 
 .comments {
@@ -725,6 +724,12 @@ body {
           transform: translate(32%, -50%);
 }
 
+@media screen and (min-width: 568px) and (max-width: 768px) {
+  .comments {
+    padding: 200px 70px;
+  }
+}
+
 .contact {
   padding: 150px 35px;
   background-color: #131313;
@@ -765,6 +770,21 @@ body {
   border-radius: 5px;
   overflow: hidden;
   max-width: 900px;
+}
+
+.contact__map iframe {
+  height: 40vh;
+  max-height: 300px;
+}
+
+@media screen and (min-width: 568px) and (max-width: 768px) {
+  .contact {
+    padding: 0 70px;
+  }
+  .contact__map iframe {
+    height: 40vh;
+    max-height: 500px;
+  }
 }
 
 .page-footer {
@@ -847,5 +867,11 @@ body {
   font-size: .8rem;
   text-decoration: inherit;
   color: #ffffff;
+}
+
+@media screen and (min-width: 568px) and (max-width: 768px) {
+  .page-footer {
+    padding: 200px 70px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
