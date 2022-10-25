@@ -340,6 +340,11 @@ body {
           clip-path: polygon(0 0, 100% 0%, 100% 95%, 50% 100%, 0 95%);
 }
 
+.about__left {
+  width: 100%;
+  max-width: 770px;
+}
+
 .about__left__img {
   margin: auto;
   width: 100%;
