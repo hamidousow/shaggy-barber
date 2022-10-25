@@ -9,11 +9,12 @@
 
     &__left {
         width: 100%;
-        max-width: 770px;
 
         &__img {
+            display: block;
             margin: auto;
-            width: 100%;            
+            width: 100%; 
+            max-width: 350px;           
             border-radius: 5px;
         }
 
@@ -57,4 +58,19 @@
             color: $clr-grey-light;
         }
     }
+}
+
+@media screen and (min-width: 568px) and (max-width: 768px) {
+
+    .about {
+        padding: 200px 70px;
+        &__left {
+            max-width: 770px;
+    
+            &__img {                
+                max-width: 568px;
+            } 
+        }
+    }
+    
 }

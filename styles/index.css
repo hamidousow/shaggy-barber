@@ -342,12 +342,13 @@ body {
 
 .about__left {
   width: 100%;
-  max-width: 770px;
 }
 
 .about__left__img {
+  display: block;
   margin: auto;
   width: 100%;
+  max-width: 350px;
   border-radius: 5px;
 }
 
@@ -395,6 +396,18 @@ body {
 
 .about__right__text {
   color: #C4C4C4;
+}
+
+@media screen and (min-width: 568px) and (max-width: 768px) {
+  .about {
+    padding: 200px 70px;
+  }
+  .about__left {
+    max-width: 770px;
+  }
+  .about__left__img {
+    max-width: 568px;
+  }
 }
 
 .services {
@@ -731,23 +744,22 @@ body {
   max-width: 900px;
 }
 
-footer {
+.page-footer {
   padding: 150px 35px;
   background-color: #131313;
 }
 
-footer .footer__section {
+.page-footer__logo img {
+  width: 150px;
+  display: block;
+  margin: auto;
+}
+
+.page-footer__section {
   margin-top: 3rem;
 }
 
-footer .footer__section a {
-  text-decoration: inherit;
-  color: #ffffff;
-  text-transform: capitalize;
-  margin-bottom: 12px;
-}
-
-footer .footer__title {
+.page-footer__title {
   font-size: 1.2rem;
   color: #DABC27;
   font-weight: 700;
@@ -755,7 +767,7 @@ footer .footer__title {
   margin-bottom: 18px;
 }
 
-footer .footer__informations {
+.page-footer__informations {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -765,7 +777,14 @@ footer .footer__informations {
           flex-direction: column;
 }
 
-footer .footer__social {
+.page-footer__link {
+  text-decoration: inherit;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 12px;
+}
+
+.page-footer__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -777,7 +796,7 @@ footer .footer__social {
           column-gap: 2rem;
 }
 
-footer .footer__social .wrap-icons {
+.page-footer__social .wrap-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -793,17 +812,17 @@ footer .footer__social .wrap-icons {
   margin-top: 3rem;
 }
 
-footer .footer__social-icon {
+.page-footer__social__icon {
   display: block;
 }
 
-footer .footer__social-icon img {
+.page-footer__social__icon img {
   height: 50px;
 }
 
-footer .footer__logo img {
-  width: 150px;
-  display: block;
-  margin: auto;
+.page-footer__rgpd__link {
+  font-size: .8rem;
+  text-decoration: inherit;
+  color: #ffffff;
 }
 /*# sourceMappingURL=index.css.map */
