@@ -16,12 +16,6 @@ function closeMenu() {
     navMenu.classList.remove('nav__menu__active');
 }
 
-// const logo = document.getElementById("nav-logo");
-
-// document.addEventListener('scroll', (e) => {
-//     window.scrollY > 50 ? logo.classList.add('nav__logo__resize') : logo.classList.remove('nav__logo__resize')
-// })
-
 /** slide */
 
 const tabPictures = [{id: 'picture-1', src: './images/picture-1.jpg'}, 
