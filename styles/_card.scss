@@ -41,7 +41,7 @@
     }
 }
 
-@media screen and (min-width: 568px) and (max-width: 768px) {
+@media screen and (min-width: 568px) {
     
     .card {
         flex-direction: column;       
@@ -49,5 +49,10 @@
         &__right {
             padding: 1rem;
         }
+    }
+
+    .card:nth-child(2) {
+        position: relative;
+        bottom: 1.5rem;
     }
 }

@@ -1,6 +1,8 @@
 .contact {
     padding: 150px 35px;
     background-color: $clr-black;
+    display: flex;
+    flex-direction: column-reverse;
 
     &__title {
         text-align: center;
@@ -43,14 +45,38 @@
     }
 }
 
-@media screen and (min-width: 568px) and (max-width: 768px) {
+@media screen and (min-width: 568px) {
     .contact {
-        padding: 0 70px;
+        padding: 200px 70px;
         &__map { 
             iframe {
-                height: 40vh;
+                height: 50vh;
                 max-height: 500px;
             }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .contact {
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 2rem;
+
+        &__left {
+            flex: 0 0 50%;
+        }
+
+        &__map { 
+            iframe {
+                height: 60vh;
+                max-height: 600px;
+            }
+        }
+
+        &__right {
+            margin: auto 0;
+            flex: 0 0 50%;
         }
     }
 }

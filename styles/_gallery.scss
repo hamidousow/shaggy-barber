@@ -1,11 +1,11 @@
 .gallery {
-    padding: 0 35px;  
+    padding: 0 35px 150px;  
     overflow: hidden;  
 
     &__slide {  
         display: grid;  
         grid-template-columns: 1fr 1fr; 
-        gap: 10px;      
+        gap: 10px;     
     }
 
     // .gallery-items>* {
@@ -22,8 +22,8 @@
     }
 }
 
-@media screen and (min-width: 568px) and (max-width: 768px) {
+@media screen and (min-width: 568px) {
     .gallery {
-        padding: 0 70px;
+        padding: 0 70px 200px;
     }
 }

@@ -60,7 +60,7 @@
     }
 }
 
-@media screen and (min-width: 568px) and (max-width: 768px) {
+@media screen and (min-width: 568px) and (max-width: 991px) {
 
     .about {
         padding: 200px 70px;
@@ -71,6 +71,22 @@
                 max-width: 568px;
             } 
         }
-    }
+    }    
+}
+
+@media screen and (min-width: 992px) {
     
+    .about {
+        padding: 200px 70px;
+        flex-direction: row;
+        column-gap: 2rem;
+        &__left {
+            max-width: 770px;
+            flex: 0 0 50%;
+    
+            &__img {                
+                max-width: 568px;
+            } 
+        }
+    } 
 }

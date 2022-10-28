@@ -118,9 +118,9 @@
         <section class="gallery" id="gallery">        
             <ul class="gallery__slide gallery-items" id="gallery-slide">
             
-            </ul>
-            <img class="zigzag-separator" src="./images/zigzag.svg" alt="separator zigzag">
+            </ul>            
         </section>
+        <img class="zigzag-separator" src="./images/zigzag.svg" alt="separator zigzag">
         <section class="tarifs" id="tarifs">
             <h2 class="tarifs__title uppercase">tarifs</h2>
             <p class="tarifs__text text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa iste illo voluptatibus quibusdam blanditiis laboriosam recusandae hic tempore amet.</p>
@@ -129,37 +129,47 @@
             </ul>
         </section>
         <section class="comments" id="comments">
-            <h2 class="comments__title title uppercase">Ils ont été satisfaits</h2>
-            <p class="comments__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus totam optio sapiente quasi expedita eveniet eum repellendus amet assumenda.</p>
-            <div class="comments__slider">
-                <div class="slider__item">
-                    <p class="slider__item__text" id="user-comment"></p>
-                    <div class="slider__item__user">
-                        <div class="slider__item__user__name" id="user-id"><i>&#128100;</i></div>
-                    </div>
-                    <div class="slider__nav">
-                        <div class="slider__nav__btn-next" id="slide-prev">
-                            <img src="./images/arrow-prev.svg" class="icon-prev" alt="previous comment">
+            <div class="comments__left">
+                <h2 class="comments__title title uppercase">Ils ont été satisfaits</h2>
+                <p class="comments__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus totam optio sapiente quasi expedita eveniet eum repellendus amet assumenda.</p>
+            </div>
+            <div class="comments__right">
+                <div class="comments__slider">
+                    <div class="slider__item">
+                        <p class="slider__item__text" id="user-comment"></p>
+                        <div class="slider__item__user">
+                            <div class="slider__item__user__name" id="user-id"><i>&#128100;</i></div>
                         </div>
-                        <div class="slider__nav__btn-prev"  id="slide-next">
-                            <img src="./images/arrow-next.svg" class="icon-next" alt="next comment">
-                        </div>                    
-                    </div>                
-                </div>            
-            </div>
-            <img class="zigzag-separator" src="./images/zigzag.svg" alt="separator zigzag">
+                        <div class="slider__nav">
+                            <div class="slider__nav__btn-next" id="slide-prev">
+                                <img src="./images/arrow-prev.svg" class="icon-prev" alt="previous comment">
+                            </div>
+                            <div class="slider__nav__btn-prev"  id="slide-next">
+                                <img src="./images/arrow-next.svg" class="icon-next" alt="next comment">
+                            </div>                    
+                        </div>                
+                    </div>            
+                </div>
+            </div>           
         </section>
+        <img class="zigzag-separator" src="./images/zigzag.svg" alt="separator zigzag">
         <section class="contact" id="contact">
-            <h2 class="contact__title title uppercase">où nous trouver ?</h2>
-            <div class="contact__information">
-                <p class="contact__text text">Shaggy Barber</p>
-                <p class="contact__text text"> 3 rue Charlemagne</p>
-                <p class="contact__text text">59200 - Tourcoing</p>
-            </div>    
-            <a href="/" class="contact__cta"> réserve ta séance </a>
-            <div class="contact__map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40415.009161039015!2d3.122676229136732!3d50.72108804506251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c328d4be0a275d%3A0x252e317d7dad858f!2s59200%20Tourcoing!5e0!3m2!1sfr!2sfr!4v1666657209479!5m2!1sfr!2sfr" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contact__left">
+                <div class="contact__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40415.009161039015!2d3.122676229136732!3d50.72108804506251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c328d4be0a275d%3A0x252e317d7dad858f!2s59200%20Tourcoing!5e0!3m2!1sfr!2sfr!4v1666657209479!5m2!1sfr!2sfr" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
+            <div class="contact__right">
+                <h2 class="contact__title title uppercase">où nous trouver ?</h2>
+                <div class="contact__information">
+                    <p class="contact__text text">Shaggy Barber</p>
+                    <p class="contact__text text"> 3 rue Charlemagne</p>
+                    <p class="contact__text text">59200 - Tourcoing</p>
+                </div>    
+                <a href="/" class="contact__cta"> réserve ta séance </a>
+            </div>
+            
+            
         </section>
     </main>
     <footer class="page-footer">

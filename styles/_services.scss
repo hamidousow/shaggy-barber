@@ -32,17 +32,34 @@
         display: flex; 
         justify-content: space-between;
         flex-direction: column; 
-        row-gap: 2rem;      
+        row-gap: 2rem;  
+        padding-top: 4rem;    
     }    
 }
 
-@media screen and (min-width: 568px) and (max-width: 768px) {
+@media screen and (min-width: 568px) {
     .services {        
         padding: 200px 70px;
 
         &__right {
+            flex-direction: row;
+            column-gap: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .services {
+        display: flex;
         flex-direction: row;
-        column-gap: 10px;
+        column-gap: 2rem;
+
+        &__left {
+            flex: 0 0 40%;
+        }
+
+        &__right {
+            flex: 1;
         }
     }
 }
