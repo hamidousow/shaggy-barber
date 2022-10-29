@@ -14,9 +14,8 @@
 
     &__title {
         color: $clr-white;
-        font-family: 'Lemon milk';
         font-size: 1.65rem;
-        font-weight: 700;
+        font-weight: 900;
         text-transform: uppercase;
     }
     
@@ -32,6 +31,15 @@
         bottom: 100px;
         width: 233px;
         text-decoration: none;
+
+        &::after {
+            content: "scroll";
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+        }
 
         &__text {
             text-transform: uppercase;

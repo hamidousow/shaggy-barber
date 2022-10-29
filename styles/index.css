@@ -53,13 +53,14 @@ table {
 }
 
 body {
-  font-family: 'Roboto';
   background-color: #242424;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 .title {
   font-size: 1.65rem;
-  font-weight: 700;
+  font-family: 'lemon_milkbold';
+  font-weight: 900;
   color: #ffffff;
   margin-bottom: 3rem;
   position: relative;
@@ -236,9 +237,8 @@ body {
 
 .hero__title {
   color: #ffffff;
-  font-family: 'Lemon milk';
   font-size: 1.65rem;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase;
 }
 
@@ -254,6 +254,15 @@ body {
   bottom: 100px;
   width: 233px;
   text-decoration: none;
+}
+
+.hero__cta::after {
+  content: "scroll";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
 }
 
 .hero__cta__text {
@@ -322,6 +331,13 @@ body {
 
 .about__left {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .about__left__img {
@@ -337,27 +353,23 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
   margin-top: 2rem;
-  -webkit-column-gap: 25px;
-          column-gap: 25px;
 }
 
 .about__left__social-item img {
+  display: block;
   height: 100%;
 }
 
 .about__right__title {
   color: #ffffff;
-  font-family: 'Lemon milk';
   font-size: 1.65rem;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 120%;
   margin-bottom: 3rem;
   position: relative;
@@ -421,7 +433,7 @@ body {
 
 .services__left__title {
   font-size: 1.65rem;
-  font-weight: 700;
+  font-weight: 900;
   color: #ffffff;
   margin-bottom: 3rem;
   position: relative;
@@ -472,17 +484,6 @@ body {
 }
 
 @media screen and (min-width: 992px) {
-  .services {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-column-gap: 2rem;
-            column-gap: 2rem;
-  }
   .services__left {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 40%;
@@ -517,18 +518,22 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
+  max-height: 15rem;
 }
 
 .card__left__img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
-  overflow: hidden;
 }
 
 .card__right {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 1rem 5px 1rem 15px;
+  height: 8rem;
 }
 
 .card__right__title {
@@ -542,10 +547,6 @@ body {
   font-size: .9rem;
   font-weight: 400;
   color: #C4C4C4;
-}
-
-.card__right #card-service-1 {
-  background-image: url("../images/hero-img.jpg");
 }
 
 @media screen and (min-width: 568px) {
@@ -600,21 +601,19 @@ body {
 
 .tarifs__title {
   font-size: 1.65rem;
-  font-weight: 700;
+  font-weight: 900;
   text-align: center;
   color: #DABC27;
   margin-bottom: 3rem;
   position: relative;
 }
 
-.tarifs__text {
-  color: #C4C4C4;
-}
-
 .tarifs__list {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 3rem 0;
+  max-width: 670px;
+  margin: auto;
 }
 
 .list__item {
@@ -640,7 +639,7 @@ body {
 
 .list__item-title, .list__item-price {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: capitalize;
   color: #DABC27;
 }
@@ -911,7 +910,7 @@ body {
 .page-footer__title {
   font-size: 1.2rem;
   color: #DABC27;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: capitalize;
   margin-bottom: 18px;
 }

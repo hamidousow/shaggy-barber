@@ -9,11 +9,13 @@
 
     &__left {
         flex: 0 0 50%;
+        max-height: 15rem;
 
         &__img {
             width: 100%;
-            display: block;           
-            overflow: hidden;
+            height: 100%;
+            object-fit: cover;
+            display: block;            
         }
     }
     
@@ -21,6 +23,7 @@
     &__right {
         box-sizing: border-box;
         padding: 1rem 5px 1rem 15px;
+        height: 8rem;
 
         &__title {
             font-size: 1.1rem;
@@ -33,10 +36,6 @@
             font-size: .9rem;
             font-weight: 400;
             color: $clr-grey-light;
-        }
-
-        #card-service-1 {
-            background-image: url('../images/hero-img.jpg');
         }
     }
 }

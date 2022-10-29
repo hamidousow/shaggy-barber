@@ -9,16 +9,17 @@ $box-shadow: 0px 3px 12px #00000050;
 $header-big: 1.65rem;
 $paragraph-m: 1.1rem;
 
-$bold: 700;
+$bold: 900;
 
 body {
-    font-family: 'Roboto';
     background-color: $clr-dark;
+    font-family: 'Helvetica Neue', sans-serif;
 }
 
 .title {
     font-size: 1.65rem;
-    font-weight: 700;
+    font-family: 'lemon_milkbold';
+    font-weight: 900;
     color: #ffffff;
     margin-bottom: 3rem;
     position: relative;

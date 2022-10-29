@@ -10,13 +10,11 @@
         position: relative;
     }
 
-    &__text {
-        color: $clr-grey-light;
-    }
-
     &__list {
         box-sizing: border-box;
-        padding: 3rem 0;        
+        padding: 3rem 0; 
+        max-width: 670px;
+        margin: auto;  
     }    
 }
 
